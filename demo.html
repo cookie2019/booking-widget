@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Caribou Club — Fine Dining in Aspen</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f8f5f0;
+      color: #1a1a1a;
+    }
+
+    /* Fake restaurant hero */
+    .hero {
+      height: 400px;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.65)),
+                  url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80') center/cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      color: #fff;
+    }
+    .hero h1 { font-size: 42px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
+    .hero p  { font-size: 16px; opacity: 0.75; margin-bottom: 28px; }
+
+    /* Content */
+    .content {
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
+    .section-title {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #1a1a1a;
+    }
+    .section-body {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 32px;
+    }
+
+    /* OpenTable replacement banner */
+    .booking-section {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px;
+      margin: 32px 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .booking-section h2 { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
+    .booking-section p  { font-size: 14px; color: #888; margin-bottom: 18px; }
+
+    /* This is all a restaurant needs to add ↓ */
+    .widget-embed {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Restaurant hero -->
+  <div class="hero">
+    <h1>The Caribou Club</h1>
+    <p>Private dining in the heart of Aspen, Colorado</p>
+
+    <!--
+      ╔══════════════════════════════════════════════════════════════╗
+      ║  ONE LINE. Drop this anywhere on your restaurant website.    ║
+      ║  Replace OpenTable / Resy with zero per-cover fees.          ║
+      ╚══════════════════════════════════════════════════════════════╝
+    -->
+    <script
+      src="./dist/book.js"
+      data-restaurant-id="ChIJexampleCaribouClub"
+      data-restaurant-name="The Caribou Club"
+      data-color="#c9a96e"
+      data-label="Reserve a table"
+    ></script>
+
+  </div>
+
+  <div class="content">
+
+    <div class="booking-section">
+      <h2>Make a reservation</h2>
+      <p>
+        Book directly — no OpenTable fees, instant SMS confirmation.<br>
+        Powered by <strong>HeyAspen</strong>.
+      </p>
+
+      <!-- Same widget, different placement — you can put it anywhere -->
+      <div class="widget-embed">
+        <script
+          src="./dist/book.js"
+          data-restaurant-id="ChIJexampleCaribouClub"
+          data-restaurant-name="The Caribou Club"
+          data-color="#c9a96e"
+          data-label="Book your table"
+        ></script>
+      </div>
+    </div>
+
+    <h2 class="section-title">About Us</h2>
+    <p class="section-body">
+      The Caribou Club has been Aspen's premier private dining destination since 1993.
+      Nestled in the heart of town, we offer an intimate atmosphere with an ever-changing
+      seasonal menu crafted by our Executive Chef.
+    </p>
+
+    <h2 class="section-title">Hours</h2>
+    <p class="section-body">
+      Tuesday – Sunday<br>
+      Dinner: 6:00 PM – 10:00 PM<br>
+      Bar opens at 5:00 PM
+    </p>
+
+  </div>
+
+</body>
+</html>
